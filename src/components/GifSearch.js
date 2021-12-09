@@ -13,6 +13,7 @@ class GifSearch extends React.Component {
     render() {
         return (
           <div>
+              <h3>Enter a search term</h3>
             <form onSubmit={this.handleSubmit}>
               <input type="text" value={this.state.query} onChange={event => this.setState({query: event.target.value})} />
             </form>
